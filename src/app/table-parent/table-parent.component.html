@@ -1,0 +1,6 @@
+<div class="container" style='text-align: center;'>
+    <div class="right_notify" *ngIf="message !== ''">
+        Message from parrent: {{ message }}
+    </div>
+    <app-table (childEvent)="message=$event" [parentData]="tableData"></app-table>
+</div>

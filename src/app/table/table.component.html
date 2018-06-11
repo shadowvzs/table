@@ -1,0 +1,36 @@
+<!--
+	i can do responsive design for this but i have no free time for that
+-->
+<table class="tool-table">
+		<tr>
+			<th><h3> Add user </h3></th>
+			<th><h3> Search </h3></th>
+		</tr>
+		<tr>
+				<td>
+						<form (submit)="addRow()">
+								<input type="text" [(ngModel)]="text" name="userdata" title="ex.: Johnny, English, 24, secreat007@agent.inv">
+						</form>
+				</td>
+				<td>
+						<input type="type" name="filter" #box (keyup)="filter(box.value)" title="Search if string exist in table">
+				</td>
+		</tr>
+</table>
+
+<table class="list-table">
+		<tr>
+				<th *ngFor="let col of columnNames">
+						{{col}}
+				</th>
+		</tr>
+		<tr *ngFor="let row of table" [className]="row.class">
+				<td *ngFor="let col of getColumn(row);">
+						{{col}}
+				</td>
+				<td>
+						<button (click)="deleteRow(row.id)"> del </button>
+						<button (click)="highligthRow(row.id)"> sel </button>
+				</td>
+		</tr>
+</table>
