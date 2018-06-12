@@ -26,8 +26,8 @@ First of all i advice read this:
 - What is Docker Volumes with external folder (only optional) https://docs.docker.com/storage/volumes/
 
 ## Download
-Docker image, bash file, source file (docker volume only optional), everything what needed is there
-https://drive.google.com/open?id=1Wis33I5xsvzHDuYKjEieWLqkdpsV7WtP
+Docker image, bash file, source file (docker volume only optional), everything what needed is there.
+- https://drive.google.com/open?id=1Wis33I5xsvzHDuYKjEieWLqkdpsV7WtP
 
 
 
